@@ -28,10 +28,17 @@
         .section-heading {
             color: #CCD6F6;
         }
+        .card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
     </style>
 </head>
 <body class="bg-navy">
 
+    <!-- Header & Hero Section -->
     <header id="inicio" class="min-h-screen flex items-center justify-center text-center px-4">
         <div class="max-w-4xl mx-auto">
             <p class="text-sm md:text-md text-accent font-semibold mb-4">¡Hola, mi nombre es</p>
@@ -46,10 +53,12 @@
         </div>
     </header>
 
+    <!-- Services Section -->
     <section id="servicios" class="py-20 px-4">
         <div class="container mx-auto">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-heading">Mis Servicios</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Servicio 1: Limpieza y Mantenimiento -->
                 <div class="p-6 bg-gray-800 rounded-lg shadow-xl btn">
                     <div class="text-accent text-3xl mb-4">⚙️</div>
                     <h3 class="text-xl md:text-2xl font-semibold mb-2 section-heading">Limpieza y Mantención Completa</h3>
@@ -57,6 +66,7 @@
                         Eliminación de polvo, suciedad y obstrucciones en ventiladores y componentes internos para mejorar la ventilación y prevenir el sobrecalentamiento.
                     </p>
                 </div>
+                <!-- Servicio 2: Cambio de Pasta Térmica -->
                 <div class="p-6 bg-gray-800 rounded-lg shadow-xl btn">
                     <div class="text-accent text-3xl mb-4">🌡️</div>
                     <h3 class="text-xl md:text-2xl font-semibold mb-2 section-heading">Cambio de Pasta Térmica</h3>
@@ -64,6 +74,7 @@
                         Reemplazo de la pasta térmica del procesador y tarjeta de video para optimizar la disipación de calor y asegurar un rendimiento óptimo.
                     </p>
                 </div>
+                <!-- Servicio 3: Optimización y Software -->
                 <div class="p-6 bg-gray-800 rounded-lg shadow-xl btn">
                     <div class="text-accent text-3xl mb-4">💻</div>
                     <h3 class="text-xl md:text-2xl font-semibold mb-2 section-heading">Optimización de Software</h3>
@@ -75,68 +86,121 @@
         </div>
     </section>
 
+    <!-- Pricing Section -->
     <section id="precios" class="py-20 px-4 bg-gray-900">
         <div class="container mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-heading">Nuestros Precios</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-heading">Nuestros Planes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Plan de Optimización -->
                 <div class="p-8 bg-gray-800 rounded-lg shadow-xl text-center border-t-4 border-blue-500 btn">
-                    <h3 class="text-2xl font-bold mb-4 text-accent">Plan Básico</h3>
-                    <p class="text-4xl md:text-5xl font-bold mb-4 section-heading">$15.000<span class="text-xl font-normal text-gray-400"> CLP</span></p>
+                    <h3 class="text-2xl font-bold mb-4 text-accent">Optimización y Aceleración</h3>
+                    <p class="text-4xl md:text-5xl font-bold mb-4 section-heading">Desde <br>$7.000<span class="text-xl font-normal text-gray-400"> CLP</span></p>
                     <ul class="text-left space-y-2 text-gray-300 mb-6">
-                        <li>✔️ Limpieza de software (virus y archivos basura)</li>
-                        <li>✔️ Optimización de arranque</li>
-                        <li>✔️ Diagnóstico de hardware</li>
+                        <li>✔️ Limpieza de virus y software basura</li>
+                        <li>✔️ Optimización del sistema operativo</li>
+                        <li>✔️ Aceleración de inicio y programas</li>
                     </ul>
                     <a href="#contacto" class="btn inline-block px-6 py-2 rounded-md font-semibold bg-teal-500 text-navy hover:bg-teal-600">
                         Contratar
                     </a>
                 </div>
-                <div class="p-8 bg-gray-800 rounded-lg shadow-xl text-center border-t-4 border-teal-500 btn relative">
-                    <div class="absolute -top-4 right-1/2 translate-x-1/2 bg-yellow-500 text-navy text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider">Popular</div>
-                    <h3 class="text-2xl font-bold mb-4 text-accent">Plan Completo</h3>
+                <!-- Plan Completo PC -->
+                <div class="p-8 bg-gray-800 rounded-lg shadow-xl text-center border-t-4 border-teal-500 btn">
+                    <h3 class="text-2xl font-bold mb-4 text-accent">Plan Completo PC</h3>
                     <p class="text-4xl md:text-5xl font-bold mb-4 section-heading">$25.000<span class="text-xl font-normal text-gray-400"> CLP</span></p>
                     <ul class="text-left space-y-2 text-gray-300 mb-6">
-                        <li>✔️ Todo lo del Plan Básico</li>
-                        <li>✔️ Limpieza física interna (polvo)</li>
+                        <li>✔️ Limpieza física interna y de componentes</li>
                         <li>✔️ Cambio de pasta térmica</li>
-                        <li>✔️ Pruebas de rendimiento completas</li>
+                        <li>✔️ Optimización completa del sistema</li>
                     </ul>
                     <a href="#contacto" class="btn inline-block px-6 py-2 rounded-md font-semibold bg-teal-500 text-navy hover:bg-teal-600">
                         Contratar
                     </a>
                 </div>
+                <!-- Plan Completo Laptop -->
                 <div class="p-8 bg-gray-800 rounded-lg shadow-xl text-center border-t-4 border-blue-500 btn">
-                    <h3 class="text-2xl font-bold mb-4 text-accent">Servicio Adicional</h3>
-                    <p class="text-4xl md:text-5xl font-bold mb-4 section-heading">A convenir</p>
+                    <h3 class="text-2xl font-bold mb-4 text-accent">Plan Completo Laptop</h3>
+                    <p class="text-4xl md:text-5xl font-bold mb-4 section-heading">$20.000<span class="text-xl font-normal text-gray-400"> CLP</span></p>
                     <ul class="text-left space-y-2 text-gray-300 mb-6">
-                        <li>✔️ Instalación de periféricos (impresoras, etc.)</li>
-                        <li>✔️ Formateo e instalación de Windows</li>
-                        <li>✔️ Respaldo y recuperación de datos</li>
+                        <li>✔️ Limpieza física interna y de componentes</li>
+                        <li>✔️ Cambio de pasta térmica</li>
+                        <li>✔️ Optimización completa del sistema</li>
                     </ul>
                     <a href="#contacto" class="btn inline-block px-6 py-2 rounded-md font-semibold bg-teal-500 text-navy hover:bg-teal-600">
                         Contratar
                     </a>
                 </div>
             </div>
+            
+            <div class="mt-16 text-center max-w-2xl mx-auto">
+                <h3 class="text-2xl font-bold mb-4 text-accent">Servicio a Domicilio</h3>
+                <p class="text-lg text-gray-400 mb-4">El precio a domicilio para el pack de limpieza de componentes y optimización es de:</p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-6 text-xl font-semibold">
+                    <p class="bg-gray-800 py-2 px-4 rounded-lg">$30.000 para PC</p>
+                    <p class="bg-gray-800 py-2 px-4 rounded-lg">$25.000 para Laptop</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Payment Methods Section -->
+    <section id="pagos" class="py-20 px-4">
+        <div class="container mx-auto max-w-2xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 section-heading">Medios de Pago</h2>
+            <div class="flex flex-wrap justify-center items-center gap-6 text-gray-300 text-lg">
+                <div class="flex flex-col items-center">
+                    <svg class="w-12 h-12 mb-2 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8a6 6 0 00-6 6v1a2 2 0 002 2h4.5a2.5 2.5 0 012.5 2.5V21a2.5 2.5 0 01-2.5 2.5h-9A2.5 2.5 0 01-1 21V6a2.5 2.5 0 012.5-2.5h16A2.5 2.5 0 0120.5 6v15a2.5 2.5 0 01-2.5 2.5h-9a2.5 2.5 0 01-2.5-2.5V7.5a2.5 2.5 0 012.5-2.5z"></path>
+                    </svg>
+                    <span>Efectivo</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <svg class="w-12 h-12 mb-2 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2v-8z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 8V4a2 2 0 00-2-2h-2a2 2 0 00-2 2v4"></path>
+                    </svg>
+                    <span>Transferencia</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <svg class="w-12 h-12 mb-2 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2v-8z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 8v4"></path>
+                    </svg>
+                    <span>Tarjeta de Crédito</span>
+                </div>
+            </div>
+            <p class="mt-6 text-sm text-gray-500">
+                (Aceptamos pagos con tarjeta a través de un link de pago seguro)
+            </p>
         </div>
     </section>
 
-    <section id="testimonios" class="py-20 px-4">
+    <!-- About Me & Testimonials Section -->
+    <section id="testimonios" class="py-20 px-4 bg-gray-800">
         <div class="container mx-auto max-w-4xl">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-heading">Lo Que Dicen Mis Clientes</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                <div class="p-6 bg-gray-800 rounded-lg shadow-xl border-l-4 border-teal-500">
+                <div class="p-6 bg-gray-700 rounded-lg shadow-xl border-l-4 border-teal-500">
                     <p class="text-gray-400 italic">"El servicio de Matías fue rápido y eficaz. Mi PC estaba muy lenta y ahora funciona increíblemente bien. ¡Un profesional de verdad!"</p>
                     <p class="font-semibold text-right mt-4 text-gray-300">- José A.</p>
                 </div>
-                <div class="p-6 bg-gray-800 rounded-lg shadow-xl border-l-4 border-teal-500">
+                <div class="p-6 bg-gray-700 rounded-lg shadow-xl border-l-4 border-teal-500">
                     <p class="text-gray-400 italic">"Solicité un cambio de pasta térmica y la temperatura de mi laptop bajó muchísimo. Matías me explicó todo el proceso. Muy confiable."</p>
                     <p class="font-semibold text-right mt-4 text-gray-300">- Sofía G.</p>
                 </div>
             </div>
+            <div class="text-center mt-12">
+                <h2 class="text-3xl md:text-4xl font-semibold mb-4 text-teal-400">
+                    Acerca de mí
+                </h2>
+                <p class="text-gray-400 leading-relaxed max-w-2xl mx-auto">
+                    Soy Matías Valladares, un apasionado estudiante de Ingeniería en Computación e Informática. Mi objetivo es ofrecerte soluciones técnicas de alta calidad y un servicio confiable a domicilio. Combino mis conocimientos académicos con la experiencia práctica para resolver los problemas de tus equipos de manera eficiente y transparente.
+                </p>
+            </div>
         </div>
     </section>
 
+    <!-- Contact & Footer Section -->
     <section id="contacto" class="py-20 px-4 bg-gray-900">
         <div class="container mx-auto text-center max-w-2xl">
             <h2 class="text-3xl md:text-4xl font-bold mb-4 section-heading">¡Contacta a Matías Hoy!</h2>
@@ -154,9 +218,10 @@
         </div>
     </section>
 
-    <footer class="py-6 text-center text-sm text-gray-500">
+    <footer class="py-6 text-center text-sm text-gray-500 bg-gray-800">
         &copy; 2024 Matías Valladares. Todos los derechos reservados.
     </footer>
 
 </body>
 </html>
+
