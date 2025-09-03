@@ -1,230 +1,162 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matías Valladares | Soporte Técnico a Domicilio</title>
+    <title>Matías Valladares | Soporte Técnico y Mantención de PC a Domicilio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Montserrat', sans-serif;
+            color: #CCD6F6;
         }
-        .btn-primary {
-            transition: background-color 0.3s, transform 0.3s;
+        .bg-navy {
+            background-color: #0A192F;
         }
-        .btn-primary:hover {
+        .text-accent {
+            color: #64FFDA;
+        }
+        .btn {
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
-        .card {
-            transition: transform 0.3s ease-in-out;
-        }
-        .card:hover {
-            transform: translateY(-5px);
+        .section-heading {
+            color: #CCD6F6;
         }
     </style>
 </head>
-<body class="bg-gray-900 text-gray-200">
+<body class="bg-navy">
 
-    <!-- Hero Section -->
-    <header class="bg-gray-800 text-white py-24 text-center">
-        <div class="container mx-auto px-4">
-            <h1 class="text-4xl md:text-6xl font-bold tracking-tight">
-                Soporte Técnico a Domicilio
-            </h1>
-            <p class="mt-4 text-lg md:text-xl font-light max-w-2xl mx-auto">
-                Confía en un servicio profesional y conveniente para todos tus problemas de computación.
+    <header id="inicio" class="min-h-screen flex items-center justify-center text-center px-4">
+        <div class="max-w-4xl mx-auto">
+            <p class="text-sm md:text-md text-accent font-semibold mb-4">¡Hola, mi nombre es</p>
+            <h1 class="text-4xl md:text-6xl font-bold section-heading">Matías Valladares.</h1>
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-400 mt-2">Soluciones rápidas y confiables para tu PC.</h2>
+            <p class="mt-8 text-lg md:text-xl max-w-2xl mx-auto text-gray-400">
+                Ofrezco servicio técnico especializado a domicilio para computadoras de escritorio y laptops. Desde optimización de software hasta limpieza profunda, tu equipo estará en las mejores manos.
             </p>
-            <div class="mt-8">
-                <a href="#contacto" class="btn-primary inline-block bg-teal-500 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:bg-teal-600">
-                    Contacta a Matías
-                </a>
-            </div>
+            <a href="#contacto" class="btn mt-12 inline-block px-8 py-3 rounded-md text-sm md:text-base font-semibold border-2 border-accent text-accent hover:bg-teal-500 hover:text-navy">
+                Contactar Ahora
+            </a>
         </div>
     </header>
 
-    <!-- Services Section -->
-    <section id="servicios" class="py-16 bg-gray-900">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-semibold text-center mb-12 text-teal-400">
-                Nuestros Servicios
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="card bg-gray-800 rounded-lg p-6 text-center shadow-md border-t-4 border-blue-500">
-                    <h3 class="text-2xl font-bold text-teal-300 mt-2 mb-2">
-                        Optimización y Mantenimiento
-                    </h3>
-                    <p class="text-gray-400 text-sm">
-                        Acelera tu computador, elimina virus y mejora su rendimiento general para un uso más fluido.
+    <section id="servicios" class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-heading">Mis Servicios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="p-6 bg-gray-800 rounded-lg shadow-xl btn">
+                    <div class="text-accent text-3xl mb-4">⚙️</div>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-2 section-heading">Limpieza y Mantención Completa</h3>
+                    <p class="text-gray-400 text-sm md:text-base">
+                        Eliminación de polvo, suciedad y obstrucciones en ventiladores y componentes internos para mejorar la ventilación y prevenir el sobrecalentamiento.
                     </p>
                 </div>
-                <div class="card bg-gray-800 rounded-lg p-6 text-center shadow-md border-t-4 border-blue-500">
-                    <h3 class="text-2xl font-bold text-teal-300 mt-2 mb-2">
-                        Formateo e Instalación
-                    </h3>
-                    <p class="text-gray-400 text-sm">
-                        Instalación limpia de Windows y drivers, asegurando que tu sistema operativo funcione a la perfección.
+                <div class="p-6 bg-gray-800 rounded-lg shadow-xl btn">
+                    <div class="text-accent text-3xl mb-4">🌡️</div>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-2 section-heading">Cambio de Pasta Térmica</h3>
+                    <p class="text-gray-400 text-sm md:text-base">
+                        Reemplazo de la pasta térmica del procesador y tarjeta de video para optimizar la disipación de calor y asegurar un rendimiento óptimo.
                     </p>
                 </div>
-                <div class="card bg-gray-800 rounded-lg p-6 text-center shadow-md border-t-4 border-blue-500">
-                    <h3 class="text-2xl font-bold text-teal-300 mt-2 mb-2">
-                        Reparación de Hardware
-                    </h3>
-                    <p class="text-gray-400 text-sm">
-                        Solucionamos problemas físicos como cambios de pasta térmica, limpieza interna y reemplazo de componentes.
-                    </p>
-                </div>
-                <div class="card bg-gray-800 rounded-lg p-6 text-center shadow-md border-t-4 border-blue-500">
-                    <h3 class="text-2xl font-bold text-teal-300 mt-2 mb-2">
-                        Instalación de Periféricos
-                    </h3>
-                    <p class="text-gray-400 text-sm">
-                        Configuración de impresoras, redes Wi-Fi, routers y cualquier otro dispositivo.
+                <div class="p-6 bg-gray-800 rounded-lg shadow-xl btn">
+                    <div class="text-accent text-3xl mb-4">💻</div>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-2 section-heading">Optimización de Software</h3>
+                    <p class="text-gray-400 text-sm md:text-base">
+                        Eliminación de virus, programas innecesarios y archivos basura para acelerar el sistema y mejorar la velocidad de arranque.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Me Section -->
-    <section id="sobre-mi" class="py-16 bg-gray-800">
-        <div class="container mx-auto px-4 text-center max-w-2xl">
-            <h2 class="text-3xl md:text-4xl font-semibold text-teal-400 mb-4">
-                Acerca de mí
-            </h2>
-            <p class="text-gray-400 leading-relaxed">
-                Soy Matías Valladares, un apasionado estudiante de Ingeniería en Computación e Informática. Mi objetivo es ofrecerte soluciones técnicas de alta calidad y un servicio confiable a domicilio. Combino mis conocimientos académicos con la experiencia práctica para resolver los problemas de tus equipos de manera eficiente y transparente.
-            </p>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonios" class="py-16 bg-gray-900">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-semibold text-center mb-12 text-teal-400">
-                Lo Que Dicen Nuestros Clientes
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-                <div class="card bg-gray-800 rounded-lg p-6 shadow-md border-l-4 border-teal-500">
-                    <p class="text-gray-400 italic">"Matías solucionó el problema de mi computador en menos de una hora. El servicio fue rápido y muy profesional. ¡Lo recomiendo al 100%!"</p>
-                    <p class="font-semibold text-right mt-4 text-gray-300">- Ana M.</p>
+    <section id="precios" class="py-20 px-4 bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-heading">Nuestros Precios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="p-8 bg-gray-800 rounded-lg shadow-xl text-center border-t-4 border-blue-500 btn">
+                    <h3 class="text-2xl font-bold mb-4 text-accent">Plan Básico</h3>
+                    <p class="text-4xl md:text-5xl font-bold mb-4 section-heading">$15.000<span class="text-xl font-normal text-gray-400"> CLP</span></p>
+                    <ul class="text-left space-y-2 text-gray-300 mb-6">
+                        <li>✔️ Limpieza de software (virus y archivos basura)</li>
+                        <li>✔️ Optimización de arranque</li>
+                        <li>✔️ Diagnóstico de hardware</li>
+                    </ul>
+                    <a href="#contacto" class="btn inline-block px-6 py-2 rounded-md font-semibold bg-teal-500 text-navy hover:bg-teal-600">
+                        Contratar
+                    </a>
                 </div>
-                <div class="card bg-gray-800 rounded-lg p-6 shadow-md border-l-4 border-teal-500">
-                    <p class="text-gray-400 italic">"Mi laptop estaba muy lenta, pero Matías la optimizó y ahora funciona como si fuera nueva. Su atención es excelente y muy paciente."</p>
-                    <p class="font-semibold text-right mt-4 text-gray-300">- Juan P.</p>
+                <div class="p-8 bg-gray-800 rounded-lg shadow-xl text-center border-t-4 border-teal-500 btn relative">
+                    <div class="absolute -top-4 right-1/2 translate-x-1/2 bg-yellow-500 text-navy text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider">Popular</div>
+                    <h3 class="text-2xl font-bold mb-4 text-accent">Plan Completo</h3>
+                    <p class="text-4xl md:text-5xl font-bold mb-4 section-heading">$25.000<span class="text-xl font-normal text-gray-400"> CLP</span></p>
+                    <ul class="text-left space-y-2 text-gray-300 mb-6">
+                        <li>✔️ Todo lo del Plan Básico</li>
+                        <li>✔️ Limpieza física interna (polvo)</li>
+                        <li>✔️ Cambio de pasta térmica</li>
+                        <li>✔️ Pruebas de rendimiento completas</li>
+                    </ul>
+                    <a href="#contacto" class="btn inline-block px-6 py-2 rounded-md font-semibold bg-teal-500 text-navy hover:bg-teal-600">
+                        Contratar
+                    </a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- AI Problem Solver Section -->
-    <section id="asesor-ia" class="py-16 bg-gray-800">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-semibold text-center mb-4 text-teal-400">
-                Asesor de Problemas con IA ✨
-            </h2>
-            <p class="text-center text-gray-400 mb-8 max-w-2xl mx-auto">
-                Describe brevemente lo que le pasa a tu equipo y obtén un diagnóstico preliminar con posibles soluciones.
-            </p>
-            <div class="max-w-2xl mx-auto">
-                <div class="flex flex-col items-center">
-                    <textarea id="problemDescription" class="w-full p-4 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-teal-500 transition-all bg-gray-700 text-gray-200" rows="4" placeholder="Ejemplo: 'Mi PC se congela' o 'Mi laptop hace un ruido extraño'"></textarea>
-                    <button id="diagnoseButton" class="btn-primary mt-4 inline-block bg-teal-500 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:bg-teal-600">
-                        ✨ Obtener Diagnóstico
-                    </button>
-                    <div id="loadingIndicator" class="mt-4 hidden animate-pulse font-semibold text-teal-400">Analizando...</div>
-                </div>
-                <div id="responseContainer" class="mt-8 p-6 bg-gray-700 rounded-lg border border-gray-600 shadow-sm">
-                    <p class="text-gray-400">El diagnóstico aparecerá aquí...</p>
+                <div class="p-8 bg-gray-800 rounded-lg shadow-xl text-center border-t-4 border-blue-500 btn">
+                    <h3 class="text-2xl font-bold mb-4 text-accent">Servicio Adicional</h3>
+                    <p class="text-4xl md:text-5xl font-bold mb-4 section-heading">A convenir</p>
+                    <ul class="text-left space-y-2 text-gray-300 mb-6">
+                        <li>✔️ Instalación de periféricos (impresoras, etc.)</li>
+                        <li>✔️ Formateo e instalación de Windows</li>
+                        <li>✔️ Respaldo y recuperación de datos</li>
+                    </ul>
+                    <a href="#contacto" class="btn inline-block px-6 py-2 rounded-md font-semibold bg-teal-500 text-navy hover:bg-teal-600">
+                        Contratar
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contacto" class="py-16 bg-gray-900 text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-semibold mb-4 text-teal-400">
-                ¡Contacta a Matías Hoy!
-            </h2>
-            <p class="text-lg mb-8 max-w-xl mx-auto font-light text-gray-300">
+    <section id="testimonios" class="py-20 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-heading">Lo Que Dicen Mis Clientes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="p-6 bg-gray-800 rounded-lg shadow-xl border-l-4 border-teal-500">
+                    <p class="text-gray-400 italic">"El servicio de Matías fue rápido y eficaz. Mi PC estaba muy lenta y ahora funciona increíblemente bien. ¡Un profesional de verdad!"</p>
+                    <p class="font-semibold text-right mt-4 text-gray-300">- José A.</p>
+                </div>
+                <div class="p-6 bg-gray-800 rounded-lg shadow-xl border-l-4 border-teal-500">
+                    <p class="text-gray-400 italic">"Solicité un cambio de pasta térmica y la temperatura de mi laptop bajó muchísimo. Matías me explicó todo el proceso. Muy confiable."</p>
+                    <p class="font-semibold text-right mt-4 text-gray-300">- Sofía G.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-20 px-4 bg-gray-900">
+        <div class="container mx-auto text-center max-w-2xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 section-heading">¡Contacta a Matías Hoy!</h2>
+            <p class="text-lg md:text-xl text-gray-400 mb-8">
                 Para cualquier consulta o para agendar una visita, no dudes en contactarme.
             </p>
-            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
-                <a href="tel:+56937636849" class="btn-primary bg-teal-500 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:bg-teal-600">
-                    Llamar: +569 37636849
-                </a>
-                <a href="https://wa.me/56937636849" target="_blank" class="btn-primary bg-green-500 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:bg-green-600">
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                <a href="https://wa.me/56937636849" target="_blank" class="btn inline-block px-8 py-3 rounded-md text-sm md:text-base font-semibold bg-green-500 text-white hover:bg-green-600">
                     WhatsApp
+                </a>
+                <a href="tel:+56937636849" class="btn inline-block px-8 py-3 rounded-md text-sm md:text-base font-semibold bg-blue-500 text-white hover:bg-blue-600">
+                    Llamar: +569 37636849
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-500 py-6 text-center text-sm">
-        <div class="container mx-auto px-4">
-            &copy; 2024 Matías Valladares. Todos los derechos reservados.
-        </div>
+    <footer class="py-6 text-center text-sm text-gray-500">
+        &copy; 2024 Matías Valladares. Todos los derechos reservados.
     </footer>
 
-    <script>
-        document.getElementById('diagnoseButton').addEventListener('click', async () => {
-            const userProblem = document.getElementById('problemDescription').value;
-            const responseContainer = document.getElementById('responseContainer');
-            const loadingIndicator = document.getElementById('loadingIndicator');
-
-            if (userProblem.trim() === '') {
-                responseContainer.innerHTML = '<p class="text-red-500">Por favor, describe tu problema.</p>';
-                return;
-            }
-
-            loadingIndicator.classList.remove('hidden');
-            responseContainer.innerHTML = '';
-            
-            try {
-                const systemPrompt = "Eres un analista de soporte técnico experto. Proporciona un diagnóstico preliminar del problema de hardware o software del usuario. Sugiere de forma concisa y amigable posibles causas y los servicios que Matías podría ofrecer para solucionarlo (puedes referirte a sus servicios como: Optimización y Mantenimiento, Formateo e Instalación, Reparación de Hardware, Instalación de Periféricos). Limita tu respuesta a un máximo de 100 palabras.";
-                const userQuery = `Problema del computador: ${userProblem}`;
-                const apiKey = "";
-                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
-
-                const payload = {
-                    contents: [{ parts: [{ text: userQuery }] }],
-                    tools: [{ "google_search": {} }],
-                    systemInstruction: {
-                        parts: [{ text: systemPrompt }]
-                    },
-                };
-
-                const response = await fetch(apiUrl, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
-                });
-
-                const result = await response.json();
-                const candidate = result.candidates?.[0];
-
-                if (candidate && candidate.content?.parts?.[0]?.text) {
-                    const text = candidate.content.parts[0].text;
-                    const formattedText = text.replace(/\n/g, '<br>');
-                    
-                    responseContainer.innerHTML = `<p class="text-gray-300">${formattedText}</p>`;
-                } else {
-                    responseContainer.innerHTML = `<p class="text-red-500">Lo siento, no pude obtener un diagnóstico en este momento. Intenta de nuevo más tarde o contáctame directamente.</p>`;
-                }
-
-            } catch (error) {
-                console.error('Error al llamar a la API:', error);
-                responseContainer.innerHTML = `<p class="text-red-500">Ocurrió un error inesperado. Por favor, revisa tu conexión a internet o intenta de nuevo.</p>`;
-            } finally {
-                loadingIndicator.classList.add('hidden');
-            }
-        });
-    </script>
 </body>
 </html>
-
